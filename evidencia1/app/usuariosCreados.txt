@@ -1,0 +1,1 @@
+mauri1025: {'nombre': 'mauricio', 'apellido': 'molina', 'dni': '45699198', 'email': 'mauri@gmail.com', 'fecha_nacimiento': '24082004', 'clave': 'Mauri.10'}
