@@ -37,7 +37,7 @@
   - DNI: 35.144.709
   - Correo Electrónico: m8barbero@gmail.com
   - GitHub: https://github.com/MacielBarbero
-
+<p style="text-align: justify;">
 Evidencia 1: Aplicación de Gestión de Usuarios y Operaciones Aritméticas en Python
 Este repositorio contiene una aplicación desarrollada en Python como parte de la Evidencia 1. La aplicación maneja el registro y autenticación de usuarios, realiza operaciones aritméticas básicas y cuenta con pruebas unitarias para asegurar su correcto funcionamiento.
 Archivos y Funcionalidades
@@ -64,3 +64,4 @@ usuariosCreados.txt: Archivo de texto que guarda un registro de los usuarios cre
 ingresos.txt: Archivo de texto que registra los ingresos exitosos de los usuarios con la fecha y hora correspondiente.
 
 log.txt: Archivo de texto que registra los intentos fallidos de inicio de sesión y bloqueos de usuarios.
+</p>
