@@ -37,7 +37,7 @@
   - **Apellido:** Barbero
   - **DNI:** 35.144.709
   - **Correo Electrónico:** [m8barbero@gmail.com](mailto:m8barbero@gmail.com)
-  - **GitHub:** [MacielBarbero](https://github.com/MacielBarbero](https://github.com/BarberoMaciel)
+  - **GitHub:** [MacielBarbero](https://github.com/BarberoMaciel)
 
 ### Evidencia 1: Aplicación de Gestión de Usuarios y Operaciones Aritméticas en Python
 
