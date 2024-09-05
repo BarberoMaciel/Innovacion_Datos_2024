@@ -1,6 +1,4 @@
-Aquí tienes el texto formateado con Markdown:
 
-```markdown
 # Innovacion_Datos_2024
 ## GRUPO 9
 
@@ -69,4 +67,3 @@ Este repositorio contiene una aplicación desarrollada en Python como parte de l
 - **ingresos.txt:** Archivo de texto que registra los ingresos exitosos de los usuarios con la fecha y hora correspondiente.
 
 - **log.txt:** Archivo de texto que registra los intentos fallidos de inicio de sesión y bloqueos de usuarios.
-```
