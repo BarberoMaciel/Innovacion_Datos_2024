@@ -33,7 +33,7 @@ def registrar_usuario():
     clave = input("Ingrese una contraseña: ")
 
     if not validar_clave(clave):
-        print("La contraseña no cumple con los requisitos.")
+        print("La contraseña no cumple con los requisitos. Debe contener al menos 8 carácteres: una letra minúscula, una letra mayúscula, un número y un carácter especial.")
         return
 
     if not captcha():
@@ -93,3 +93,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
