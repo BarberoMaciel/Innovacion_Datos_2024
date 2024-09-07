@@ -16,14 +16,6 @@ def validar_clave(clave):
             re.search(r'[0-9]', clave) and
             re.search(r'[\W_]', clave))
 
-# def captcha():
-#     a = round(random.uniform(1, 10), 2)
-#     b = round(random.uniform(1, 10), 2)
-#     print(f"Resuelva la siguiente operación: {a} + {b} = ?")
-#     resultado = float(input("Ingrese el resultado con dos decimales: "))
-#     return resultado == round(aritmetica.sumar(a, b), 2)
-
-
 def captcha(max_intentos=4):
     intentos = 0
     while intentos < max_intentos:
