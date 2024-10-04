@@ -191,19 +191,23 @@ def menu_principal():
 
         elif opcion == '6':
             while True:
-                username = input("Ingrese Username: ")
-                usuario = sistema_usuarios.buscar_usuario(username)
-                if not usuario:
-                    print("Usuario incorrecto. Intente nuevamente.")
-                else:
-                    password = input("Ingrese Password: ")
-                    if usuario.password == password:
-                        print(f"Ingreso exitoso como {usuario.username}.")
-                        sistema_accesos.registrar_acceso(usuario, True)
-                        break
-                    else:
-                        print("Clave incorrecta. Intento fallido.")
-                        sistema_accesos.registrar_acceso(usuario, False, password)
+             username = input("Ingrese Username (o '0' para salir): ")
+             if username == '0':
+                 break  # Salir si el usuario quiere salir
+        
+             usuario = sistema_usuarios.buscar_usuario(username)
+             if not usuario:
+               print("Usuario incorrecto. Intente nuevamente.")
+               continue  # Volver a pedir el nombre de usuario
+        
+             password = input("Ingrese Password: ")
+             if usuario.password == password:
+                print(f"Ingreso exitoso como {usuario.username}.")
+                sistema_accesos.registrar_acceso(usuario, True)
+                break
+             else:
+                  print("Clave incorrecta. Intento fallido.")
+                  sistema_accesos.registrar_acceso(usuario, False, password)
 
             while True:
                 print("\n--- Menú de Usuario ---")
