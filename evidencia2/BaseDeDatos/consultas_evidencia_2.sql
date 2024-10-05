@@ -8,7 +8,7 @@ FROM Productos
 WHERE En_Promocion = 1;
 
 -- Listar todos los clientes con su teléfono y email. */
-SELECT CONCAT(Nombre, " ", Apellido) AS Cliente, Telefono AS `Teléfono`, Email `Correo electrónico`
+SELECT CONCAT(Nombre, " ", Apellido) AS Cliente, Telefono AS `Teléfono`, Email AS `Correo electrónico`
 FROM Clientes;
 
 -- INSERT:
