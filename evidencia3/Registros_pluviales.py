@@ -15,7 +15,7 @@ def crear_registros_pluviales(anio):
     df.columns = [f'Mes {i + 1}' for i in range(12)]
     return df
 
-# Crear archivos CSV para los años 2000 a 2019
+# Crear archivos CSV para los años 2000 a 2019 para tener registros previos.
 for anio in range(2000, 2020):
     nombre_archivo = f"registroPluvial{anio}.csv"
     if not os.path.exists(nombre_archivo):  # Solo crea si no existe
@@ -71,7 +71,7 @@ def crear_graficos(df, anio):
     plt.xticks(rotation=0)
     plt.show()
 
-    # Graficar de dispersión
+    # Grafico de dispersión
     for mes in range(12):
         plt.scatter(df.index + 1, df.iloc[:, mes], label=f'Mes {mes + 1}')
 
@@ -79,9 +79,9 @@ def crear_graficos(df, anio):
     plt.xlabel('Día (índice + 1)')
     plt.ylabel('Valores')
     plt.title('Gráfico de Dispersión')
-    # Configurar la leyenda fuera del gráfico
+    # Leyenda fuera del gráfico
     plt.legend(loc='upper left', bbox_to_anchor=(1, 1))  # Ajusto la posición.
-    plt.tight_layout()  # Ajusta el layout para evitar que se corten los elementos
+    plt.tight_layout()  # Evitar que se corten los elementos
 
     plt.show()
 
@@ -89,5 +89,5 @@ def crear_graficos(df, anio):
     plt.figure(figsize=(8, 8))
     plt.pie(suma_anual, labels=suma_anual.index, autopct='%1.1f%%', startangle=90)
     plt.title('Distribución de Lluvias por Mes')
-    plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+    plt.axis('equal') 
     plt.show()
